@@ -1,0 +1,20 @@
+form(method="post", action="/pay", class="payment")
+    div(class="form-row align-items-center")
+        div(class="col-auto")
+
+            div(class="form-group")
+                label(for="cardNumber") Card Number
+                input(class="form-control", id="cardNumber", aria-describedby="cardNumberHelp", placeholder="Enter Your card number", required, maxlength=16, minlength=16)
+                span(class="validity")
+            div(class="form-group")
+                label(for="cardMonth") Date
+                div(class="input-group mb-2")
+                    input(type="text", class="form-control", id="cardMonth", placeholder="MM", required, maxlength=2, minlength=2)
+                    div(class="input-group-text") /
+                    input(type="text", class="form-control", id="cardYear", placeholder="YY", required, maxlength=2, minlength=2)
+
+                span(class="validity")
+            div(class="form-group form-check")
+                input(type="checkbox", class="form-check-input", id="notifyMe")
+                label(class="form-check-label", for="notifyMe") Get notifications
+            button(type="submit", class="btn btn-primary") Login

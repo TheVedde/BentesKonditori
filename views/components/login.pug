@@ -1,0 +1,26 @@
+a(class="nav-link", data-toggle="modal", data-target="#loginModal", href="#") Login
+
+div(class="modal fade", id="loginModal", tabindex="-1", role="dialog", aria-labelledby="loginModalTitle", aria-hidden="true")
+    div(class="modal-dialog modal-dialog-centered", role="document")
+        div(class="modal-content")
+            div(class="modal-header")
+                h5(class="modal-title", id="loginModalTitle") Login
+                button(type="button", class="close", data-dismiss="modal", aria-label="Close")
+                    span(aria-hidden="true") &times;
+            div(class="modal-body")
+
+                form(method="post", action="/login")
+                    div(class="form-group")
+                        label(for="email") Email Address
+                        input(type="email", class="form-control", id="email", aria-describedby="emailHelp", placeholder="Enter Email")
+                        small(id="emailHelp", class="form-text text-muted") We'll never share your email with third-part.
+                    div(class="form-group")
+                        label(for="password") Email Address
+                        input(type="password", class="form-control", id="password", placeholder="Enter Password")
+                    div(class="form-group form-check")
+                        input(type="checkbox", class="form-check-input", id="rememberMe")
+                        label(class="form-check-label", for="rememberMe") Remember Me
+                    button(type="submit", class="btn btn-primary") Login
+
+            div(class="modal-footer")
+                button(type="button", class="btn btn-primary", data-dismiss="modal") Close
