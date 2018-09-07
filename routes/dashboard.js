@@ -5,7 +5,7 @@ const router = express.Router();
 
 /* GET dashboard page. */
 router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Express' });
+    res.render('dashboard_components/dashboard');
 });
 
 router.get("/transactions", function (req, res) {
