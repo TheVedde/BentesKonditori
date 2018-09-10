@@ -1,7 +1,13 @@
 include header
 block content
-    div(id="sideNav", class="sidenav")
-        a(href="javascript:void(0)", class="btn btn-outline-primary", onclick="closeNav()") &times;
-
-    span(onclick="openNav();") Nav
+    div(id="sideNav", class="sidenav", onmouseenter="openNav()", onmouseleave="closeNav()")
+        a(class="link", href="/dashboard")
+            div(class="btn btn-outline-primary")
+                div(class="fas fa-home")
+            p(class="text") Home
+        a(class="link", href="#")
+            div(class="btn btn-outline-primary")
+                div(class="fas fa-home")
+            p(class="text") Statistics
+    main
 include footer
