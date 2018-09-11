@@ -20,7 +20,6 @@ body {
 .text {
   display: none;
   overflow: hidden;
-  transition: 0.5s;
-  animation-delay: 0.5s; }
+  transition: 0.5s; }
 
 /*# sourceMappingURL=dashboard.css.map */
