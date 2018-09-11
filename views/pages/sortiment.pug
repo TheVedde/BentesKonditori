@@ -1,88 +1,14 @@
 extends ./../layout
 block content
-    //form(method="post", action="/custom")
-    //    div(class="form-group")
-    //        label(for="email") Email Address
-    //        input(type="email", class="form-control", id="email", aria-describedby="emailHelp", placeholder="Enter Email")
-    //    div(class="form-group")
-    //        label(for="password") Email Address
-    //        input(type="password", class="form-control", id="password", placeholder="Enter Password")
-    //    div(class="form-group form-check")
-    //        input(type="checkbox", class="form-check-input", id="notifyMe")
-    //        label(class="form-check-label", for="notifyMe") Get notifications
-    //    button(type="submit", class="btn btn-primary") Login
     div(class="container justify-content-between")
         div(class="row")
-            div(class="col")
-                div(class="card", style="width: 250px;margin-top: 20px;")
-                    img(class="card-img-top", src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png", alt="some image here")
-                    div(class="card-body")
-                        h5(class="card title") here is a title
-                        p(class="card-text") here is a description
-                        a(href="#", class="btn btn-primary") want money
-                        p(class="card-text float-right") 200 kr
 
-
-            div(class="col")
-                div(class="card", style="width: 250px;margin-top: 20px;")
-                    img(class="card-img-top", src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png", alt="some image here")
-                    div(class="card-body")
-                        h5(class="card title") here is a title
-                        p(class="card-text") here is a description
-                        a(href="#", class="btn btn-primary") want money
-                        p(class="card-text float-right") 200 kr
-
-            div(class="col")
-                div(class="card", style="width: 250px;margin-top: 20px;")
-                    img(class="card-img-top", src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png", alt="some image here")
-                    div(class="card-body")
-                        h5(class="card title") here is a title
-                        p(class="card-text") here is a description
-                        a(href="#", class="btn btn-primary") want money
-                        p(class="card-text float-right") 200 kr
-
-            div(class="col")
-                div(class="card", style="width: 250px;margin-top: 20px;")
-                    img(class="card-img-top", src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png", alt="some image here")
-                    div(class="card-body")
-                        h5(class="card title") here is a title
-                        p(class="card-text") here is a description
-                        a(href="#", class="btn btn-primary") want money
-                        p(class="card-text float-right") 200 kr
-
-        div(class="row")
-            div(class="col")
-                div(class="card", style="width: 250px;margin-top: 20px;")
-                    img(class="card-img-top", src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png", alt="some image here")
-                    div(class="card-body")
-                        h5(class="card title") here is a title
-                        p(class="card-text") here is a description
-                        a(href="#", class="btn btn-primary") want money
-                        p(class="card-text float-right") 200 kr
-
-            div(class="col")
-                div(class="card", style="width: 250px;margin-top: 20px;")
-                    img(class="card-img-top", src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png", alt="some image here")
-                    div(class="card-body")
-                        h5(class="card title") here is a title
-                        p(class="card-text") here is a description
-                        a(href="#", class="btn btn-primary") want money
-                        p(class="card-text float-right") 200 kr
-
-            div(class="col")
-                div(class="card", style="width: 250px;margin-top: 20px;")
-                    img(class="card-img-top", src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png", alt="some image here")
-                    div(class="card-body")
-                        h5(class="card title") here is a title
-                        p(class="card-text") here is a description
-                        a(href="#", class="btn btn-primary") want money
-                        p(class="card-text float-right") 200 kr
-
-            div(class="col")
-                div(class="card", style="width: 250px;margin-top: 20px;")
-                    img(class="card-img-top", src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-128.png", alt="some image here")
-                    div(class="card-body")
-                        h5(class="card title") here is a title
-                        p(class="card-text") here is a description
-                        a(href="#", class="btn btn-primary") want money
-                        p(class="card-text float-right") 200 kr
+           each arrz in arrayz
+                div(class="col-3")
+                    div(class="card", style="width: 250px;margin-top: 20px;")
+                        img(class="card-img-top", src="https://smittenkitchendotcom.files.wordpress.com/2017/08/german-chocolate-wedding-cake.jpg?w=750", alt="some image here")
+                        div(class="card-body")
+                            h5(class="card-title")=arrz.cake_name
+                            p(class="card-text")=arrz.cake_size
+                            a(href="#", class="btn btn-primary", id="addToCart") want money
+                            p(class="card-text float-right")=arrz.cake_price
